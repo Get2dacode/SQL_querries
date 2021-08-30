@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/jonathanjones/Downloads/Python_code/customer_feedback.db" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="672"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">--  # quick view of sample size of data
+-- select  * 
+-- FROM Customer_feedback 
+-- LIMIT 20
+ 
+-- sending out the group email to user born in  a specific period for the markeing team 
+-- SELECT  * 
+-- FROM Customer_feedback 
+-- WHERE Birthday &lt;= '1989-12-31' AND Birthday &gt;= '1980-01-01'
+
+-- Gathering user who signed up before May 2017
+-- SELECT email, created_at
+-- FROM Customer_feedback
+-- WHERE created_at &lt;'2017-05-01'
+
+-- FINDING USERS WHO RECEIVED THE A/B ABOUT BEARS
+-- SELECT email
+-- FROM Customer_feedback
+-- WHERE   test = 'bears'
+
+-- Finding the users who were BBB tested
+-- SELECT email
+-- FROM  Customer_feedback
+-- WHERE Campaign like '%BBB%'
+--  
+
+-- Gathering the users who received the 2nd copy set Campaign
+-- SELECT *
+-- FROM Customer_feedback
+-- WHERE Campaign like '%2'
+-- ORDER BY created_at DESC
+
+-- finding  the users who recieved both a campaign or test
+-- SELECT  email
+-- FROM Customer_feedback
+-- WHERE Campaign is NOT NULL and Test is NOT NULL
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
